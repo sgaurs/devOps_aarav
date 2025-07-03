@@ -104,14 +104,14 @@ module "callvma" {
 #   image_offer      = "0001-com-ubuntu-server-focal"
 # }
 
-module "callkv" {
-  source                    = "../Child_Modules/azurerm_key-vault"
-  depends_on                = [module.callrg]
-  test1keyvaultname         = "mykeyvaluttest"
-  test1keyvaultlocation     = "West Europe"
-  test1rgname               = "B17_G3_testrg"
-  test1keyvaultsecretunname = "vmusername"
-  test1kvunvalue            = "aarushadmin"
-  test1keyvaultsecretpwname = "vmuserpw"
-  test1kvpwvalue            = "Odido@#9876ads"
-}
+# module "callkv" {
+#   source                    = "../Child_Modules/azurerm_key-vault"
+#   depends_on                = [module.callrg]
+#   test1keyvaultname         = "mykeyvaluttest"
+#   test1keyvaultlocation     = "West Europe"
+#   test1rgname               = "B17_G3_testrg"
+#   test1keyvaultsecretunname = "vmusername"
+#   test1kvunvalue            = "aarushadmin"
+#   test1keyvaultsecretpwname = "vmuserpw"
+#   test1kvpwvalue            = "Odido@#9876ads"
+# }
